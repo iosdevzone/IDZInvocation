@@ -13,8 +13,8 @@ This allows you to do things like this:
   }
 ```
 
-## Umm, OK, But why did you write it?
-I needed it for some testing and bug-checking I am currently doing. It's not something for production code, it's for debugging and testing. There may be some other stuff that does in on the internets, but my google-fu could not find it quicer than I could write it.
+## Um, OK, But why did you write it?
+I needed it for some testing and bug-checking I am currently doing. It's not something for production code, it's for debugging and testing. There may be some other stuff that does it on the internets, but my google-fu could not find it quicker than I could write it.
 
 ## How do I add it to my project?
 Just add the files `NSInvocation+IDZInvocation.h` and `NSInvocation+IDZInvocation.m` to your project.
