@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 iOS Developer Zone. All rights reserved.
 //
 
-#import <Founcation/Foundation.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for IDZInvocation.
 FOUNDATION_EXPORT double IDZInvocationVersionNumber;
