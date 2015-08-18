@@ -2,7 +2,12 @@
 A category on NSInvocation to make argument value extraction less painful.
 
 ## What does it do?
-Given an `NSInvocation` object `anInvocation`, `IDZInvocation` adds an `idz_arguments` property of type `NSArray` containing the values of the arguments to the invocation.
+Adds two properties to `NSInvocation`:
+
+```objective-c
+@property (nonatomic, readonly) NSArray* idz_arguments;
+@property (nonatomic, readonly) id idz_returnValue;
+```
 
 This allows you to do things like this:
 ```objective-c
