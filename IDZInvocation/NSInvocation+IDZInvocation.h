@@ -11,5 +11,6 @@
 @interface NSInvocation (IDZInvocation)
 
 @property (nonatomic, readonly) NSArray* idz_arguments;
+@property (nonatomic, readonly) id idz_returnValue;
 
 @end
