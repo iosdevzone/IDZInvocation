@@ -22,9 +22,12 @@
     for(int a = 2; a < signature.numberOfArguments; ++a)
     {
         const char *pType = [signature getArgumentTypeAtIndex:a];
-        [arguments addObject:[self idz_boxType:pType withValueFetcher:^(void *pValue, size_t valueBytes) {
+        id boxedType = [self idz_boxType:pType withValueFetcher:^(void *pValue, size_t valueBytes) {
             [self getArgument:pValue atIndex:a];
-        }]];
+        }];
+        if(!boxedType)
+            boxedType = [NSNull null];
+        [arguments addObject:boxedType];
     }
     return arguments;
 }
